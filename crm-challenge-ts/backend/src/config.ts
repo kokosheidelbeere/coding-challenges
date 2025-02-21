@@ -8,7 +8,8 @@ const config =  {
     },
     PSQL_HOST: {
         type: 'string',
-        default: '127.0.0.1',
+        //default is locahost
+        default: 'postgres',
     },
     PSQL_PORT: {
         type: 'number',

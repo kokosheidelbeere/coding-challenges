@@ -1,5 +1,5 @@
 import config from '../config';
-import { Pool } from 'pg';
+import { Pool, QueryConfig } from 'pg';
 
 const v1: Pool = new Pool({
     user: <string>config.PSQL_USER,
@@ -10,7 +10,7 @@ const v1: Pool = new Pool({
   }
 );
 
-export default function queryDb(query: string):Promise<any[]> {
+export default function queryDb(query: string | QueryConfig):Promise<any[]> {
   return v1.query(query)
     .then((res) => {
       return res.rows;

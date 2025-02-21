@@ -1,6 +1,5 @@
 import { FastifyInstance } from 'fastify';
-import routes from './routes';
-
+import customer from './routes/api/customer';
 
 declare module 'fastify' {
     interface FastifyInstance {
@@ -9,12 +8,11 @@ declare module 'fastify' {
 }
 
 export default async function app(fastify: FastifyInstance) {
+  fastify.register(customer);
 
-    fastify.register(routes);
-
-    if (process.env.NODE_ENV === 'development') {
-        fastify.ready(() => {
-            console.log(fastify.printRoutes());
-        });
-    }
+  if (process.env.NODE_ENV === 'development') {
+    fastify.ready(() => {
+      console.log(fastify.printRoutes());
+    });
+  }
 }
