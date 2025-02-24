@@ -1,0 +1,18 @@
+# Ignore node_modules (if not already ignored)
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Ignore dependency lock files if you don't want to track exact versions
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Ignore environment files (if any)
+.env
+backend/.env
+frontend/.env
+
+# Ignore build and cache files
+dist/
+build/

@@ -1,7 +1,8 @@
-import './App.css';
-import HelloWorld from './helloWorld';
-import CustomerTable from './customerTable';
-import AddCustomerForm from './addCustomerForm';
+import "./App.css";
+import HelloWorld from "./helloWorld";
+import CustomerTable from "./customerTable";
+import AddCustomerForm from "./addCustomerForm";
+import AddTssForm from "./addTssComponent";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <header className="App-header">
         <HelloWorld />
         <AddCustomerForm />
+        <AddTssForm />
         <CustomerTable />
       </header>
     </div>

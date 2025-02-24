@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/uuid": "^9.0.1",
     "@types/html-entities": "^1.3.4",
     "@types/node": "^16.11.11",
     "@types/nodemailer": "^6.4.4",
@@ -33,6 +34,7 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
+    "uuid": "^9.0.0",
     "axios": "^0.24.0",
     "dotenv": "^10.0.0",
     "env-schema": "^3.5.0",

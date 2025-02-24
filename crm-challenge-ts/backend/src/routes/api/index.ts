@@ -2,10 +2,9 @@ import { FastifyInstance } from 'fastify';
 import customer from './customer';
 
 declare module 'fastify' {
-    interface FastifyInstance {
-    }
+  interface FastifyInstance {}
 }
 
-export default async function(fastify: FastifyInstance) {
-    fastify.register(customer);
-};
+export default async function (fastify: FastifyInstance) {
+  fastify.register(customer);
+}
